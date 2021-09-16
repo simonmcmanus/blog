@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+{% for link in collections.links %}
+
+   <li> <a href=" {{link.url}}">{{ link.title}}</li>
+
+{% endfor %}
